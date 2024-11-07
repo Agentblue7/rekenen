@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // opdracht 1
+    function berekenInhoud(lengte, breedte, hoogte) { 
+
+    let kubusInhoud = lengte * breedte * hoogte;
+    return kubusInhoud;
+      }
+    let kubusInhoud = berekenInhoud(10, 5, 10);
+    console.log(kubusInhoud);
+
+
+      // opdracht 2
+    function cylinderInhoud(radius, hoogte) {
+
+    let inhoud = Math.PI * Math.pow(radius, 2)  * hoogte;
+    return inhoud;
+        }
+        let radius = 5;
+
+        let hoogte = 10;
+
+        let inhoud = cylinderInhoud(radius, hoogte);
+        console.log("cyllindeere :", inhoud);
+
+
+    //opdracht 3
+    function berekenDriehoek(lengte, hoogte) {
+
+    let langeZijde = Math.sqrt(lengte ** 2 + hoogte ** 2);
+    return langeZijde;
+    }
+    let driehoek = berekenDriehoek(3, 4);
+    console.log("de driehoek", driehoek);
+
+
+    // opdracht 4
+    function berekenGemiddelde(getal1, getal2, getal3, getal4, getal5, getal6, getal7) {
+        
+    let som = getal1 + getal2 + getal3 + getal4 + getal5 + getal6 + getal7;
+    let gemiddelde = som / 7;
+    return gemiddelde;
+    }
+    let gemiddelde = berekenGemiddelde(10, 20, 30, 40, 50, 60, 70);
+    console.log(gemiddelde);
+    
+</script>
+</html>
